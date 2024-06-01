@@ -2,10 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-
-
-
-:root{
+:root {
   --color-primary: #ff7a2f;
   --color-secondary: #f4f5f9;
   --color-black: #101010;
@@ -26,14 +23,135 @@
   box-sizing: border-box;
 }
 
-
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
-  font-family:"Rubik",sans-serif;
+body {
+  font-family: "Rubik", sans-serif;
   background-color: var(--color-secondary);
   color: var(--color-black);
   line-height: 1.8;
   overflow-x: hidden;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("./images/headerimg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150vh;
+}
+
+.sub-menu {
+  visibility: hidden;
+  background-color: var(--color-primary);
+  width: 170px;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+
+.home:hover .sub-menu {
+  visibility: visible;
+}
+
+.sub-menu li:hover {
+  color: var(--color-black);
+  transition: var(--transition);
+}
+.project-menu {
+  visibility: hidden;
+  background-color: var(--color-primary);
+  width: 190px;
+  border-radius: 10px;
+  transition: var(--transition);
+  margin-left: 10rem;
+}
+
+.project-sub:hover .project-menu {
+  visibility: visible;
+  color: var(--color-secondary);
+}
+
+.card {
+  height: 250px;
+  position: relative;
+  z-index: 202;
+  border: 1px solid rgba(255, 68, 0, 0.247);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 100%;
+  z-index: 201;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 122, 47, 0.7);
+  opacity: 0;
+  transition: var(--transition);
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.card .background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: var(--transition);
+  overflow: hidden;
+}
+.card:hover .background-img {
+  opacity: 1;
+}
+.card-content {
+  position: relative;
+  z-index: 1;
+  color: var(--color-black);
+}
+
+.card:hover .card-content p {
+  color: #f4f5f9;
+  transition: var(--transition);
+}
+.card:hover .card-content h3 {
+  color: #f4f5f9;
+  transition: var(--transition);
+}
+
+.overlay2 {
+  background: #f4f5f9;
+  clip-path: polygon(100% 7%, 100% 60%, 100% 100%, 0 100%, 0 36%);
+  transition: var(--transition);
+  opacity: 1;
+}
+
+
+.about-img-right{
+height: 1000px;
+width: 50%;
+  clip-path: polygon(99% 0, 100% 60%, 100% 90%, 64% 34%, 36% 0);
+
 }
