@@ -15,8 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
-
+    <header class="h-[100%] md:h-[150vh]">
       <!-- navbar start -->
       <nav class="wrapper h-20 flex items-center justify-between pt-14">
         <div class="logo">
@@ -81,11 +80,13 @@
                   <a href="">Pricing </a>
                 </li>
                 <li class="relative project-sub">
-                  <a href="">Projects <span
-                  ><i class="fa-solid fa-angle-right text-[12px]"></i></i></span
-              ></a>
+                  <a href=""
+                    >Projects
+                    <span
+                      ><i class="fa-solid fa-angle-right text-[12px]"></i></span
+                  ></a>
                   <ul
-                    class="absolute project-menu flex flex-col gap-4 p-6 text-[16px] mt-5 "
+                    class="absolute project-menu flex flex-col gap-4 p-6 text-[16px] mt-5"
                   >
                     <li>
                       <a href="">Projects </a>
@@ -102,7 +103,6 @@
                     <li>
                       <a href="">Projects 04</a>
                     </li>
-                    
                   </ul>
                 </li>
                 <li>
@@ -159,126 +159,699 @@
       <!-- navbar end -->
       <!-- hero-section start -->
       <div class="hero-section mt-24 wrapper">
-        <div class="hero-content ">
-          <h1 class="text-7xl text-[#f4f5f9] uppercase ml-16 leading-normal font-medium tracking-tighter">Creativity best <span class="text-[#ff7a2f]">agency business</span> marketing.</h1>
+        <div class="hero-content">
+          <h1
+            class="text-3xl lg:text-7xl text-[#f4f5f9] uppercase lg:ml-16 leading-normal font-medium tracking-tighter"
+          >
+            Creativity best
+            <span class="text-[#ff7a2f]">agency business</span> marketing.
+          </h1>
         </div>
 
-        <div class="main-hero flex gap-20 mt-20 mb-10 ">
-          <div class="hero-img w-[60%]">
-            <img src="./images/image-1.png" alt="">
+        <div class="main-hero grid grid-cols md:grid-cols-2 gap-10 mt-20 mb-10">
+          <div class="hero-img">
+            <img
+              src="./images/image-1.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
           <div class="main-hero-content text-white flex flex-col gap-10">
-            <p class="w-[80%]"> 
-Beyond more stoic this along goodness this sed wow manatee wasteful telling spransac coldly spokeles.</p>
-<div class="plus flex gap-28">
-  <div class="project-com flex flex-col gap-3">
-    <span class="text-5xl text-white font-semibold">12+</span>
-    <p>Project Completed</p>
-  </div>
-  <div class="member flex flex-col gap-3">
-    <span class="text-5xl text-white font-semibold">22+</span>
-    <p>Team Members</p>
-  </div>
-</div>
-<div class="hero-btn mt-8 flex gap-20 items-center">
-  <div>
-    <button type="button" class="border border-[#ff7a2f] rounded-md px-12 py-4  hover:bg-[#ff7a2f] duration-300">
-    Get Started
-  </button>
-  </div>
+            <p class="w-[80%]">
+              Beyond more stoic this along goodness this sed wow manatee
+              wasteful telling spransac coldly spokeles.
+            </p>
+            <div class="plus flex gap-28">
+              <div class="project-com flex flex-col gap-3">
+                <span class="text-5xl text-white font-semibold">12+</span>
+                <p>Project Completed</p>
+              </div>
+              <div class="member flex flex-col gap-3">
+                <span class="text-5xl text-white font-semibold">22+</span>
+                <p>Team Members</p>
+              </div>
+            </div>
+            <div class="hero-btn mt-8 flex gap-20 items-center">
+              <div>
+                <button
+                  type="button"
+                  class="border border-[#ff7a2f] rounded-md px-12 py-4 hover:bg-[#ff7a2f] duration-300"
+                >
+                  Get Started
+                </button>
+              </div>
 
-    <div class="w-24 h-24 overflow-hidden">
-      <img src="https://assets-v2.lottiefiles.com/a/c97d4dec-1173-11ee-a8df-a350615f466b/HzlJZ2iVMb.gif" alt="video gif" class="w-full h-full object-cover rounded-full">
-    </div>
-</div>
+              <div class="w-24 h-24 overflow-hidden">
+                <img
+                  src="https://assets-v2.lottiefiles.com/a/c97d4dec-1173-11ee-a8df-a350615f466b/HzlJZ2iVMb.gif"
+                  alt="video gif"
+                  class="w-full h-full object-cover rounded-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
-
-        
       </div>
 
       <!-- hero-section end -->
     </header>
 
- <!-- main start -->
-     <main>
-        <div class="wrapper cards mt-[20rem] grid grid-cols md:grid-cols-4 gap-10 ">
-            <div class="relative">
-              <div class="flex flex-col gap-5 card shadow-md md:mt-28 justify-center items-center p-8">
-                <div class="background-img" style="background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');"></div>
-                <div class="overlay"></div>
-                <div class="card-content flex flex-col gap-5 justify-center items-center">
-                    <span><i class="fa-regular fa-comments text-[#ff7a2f] text-3xl"></i></span>
-                    <h3 class="text-xl font-medium">Your competitors</h3>
-                    <p>We are is placeholder texte nly used in the graphic prin and publishing.</p>
-                </div>
+    <!-- main start -->
+    <main>
+      <div class="">
+        <div
+          class="wrapper cards mt-[20rem] grid grid-cols md:grid-cols-4 gap-10"
+        >
+          <div class="relative">
+            <div
+              class="flex flex-col gap-5 card shadow-md md:mt-28 justify-center items-center p-8"
+            >
+              <div
+                class="background-img"
+                style="
+                  background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');
+                "
+              ></div>
+              <div class="overlay"></div>
+              <div
+                class="card-content flex flex-col gap-5 justify-center items-center"
+              >
+                <span
+                  ><i class="fa-regular fa-comments text-[#ff7a2f] text-3xl"></i
+                ></span>
+                <h3 class="text-xl font-medium">Your competitors</h3>
+                <p>
+                  We are is placeholder texte nly used in the graphic prin and
+                  publishing.
+                </p>
+              </div>
             </div>
-             <span class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300">01</span>
-            </div>
+            <span
+              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              >01</span
+            >
+          </div>
 
-
-            <div class="relative">
-              <div class="card flex flex-col gap-5 justify-center items-center p-8 shadow-md">
-                <div class="background-img" style="background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');"></div>
-                <div class="overlay"></div>
-                <div class="card-content flex flex-col gap-5 justify-center items-center">
-                    <span><i class="fa-brands fa-servicestack text-[#ff7a2f] text-4xl"></i></span>
-                    <h3 class="text-xl font-medium">Full Responsive</h3>
-                    <p>We are is placeholder texte nly used in the graphic prin and publishing.</p>
-                </div>
+          <div class="relative">
+            <div
+              class="card flex flex-col gap-5 justify-center items-center p-8 shadow-md"
+            >
+              <div
+                class="background-img"
+                style="
+                  background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');
+                "
+              ></div>
+              <div class="overlay"></div>
+              <div
+                class="card-content flex flex-col gap-5 justify-center items-center"
+              >
+                <span
+                  ><i
+                    class="fa-brands fa-servicestack text-[#ff7a2f] text-4xl"
+                  ></i
+                ></span>
+                <h3 class="text-xl font-medium">Full Responsive</h3>
+                <p>
+                  We are is placeholder texte nly used in the graphic prin and
+                  publishing.
+                </p>
+              </div>
             </div>
-             <span class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300">02</span>
-            </div>
+            <span
+              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              >02</span
+            >
+          </div>
 
-
-           <div class="relative">
-             <div class="card md:-mt-[5rem] flex flex-col gap-5 justify-center items-center p-8 shadow-md">
-                <div class="background-img" style="background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');"></div>
-                <div class="overlay"></div>
-                <div class="card-content flex flex-col gap-5 justify-center items-center">
-                    <span><i class="fa-regular fa-eye text-[#ff7a2f] text-4xl"></i></span>
-                    <h3 class="text-xl font-medium">Mobile Usability</h3>
-                    <p>We are is placeholder texte nly used in the graphic prin and publishing.</p>
-                </div>
+          <div class="relative">
+            <div
+              class="card md:-mt-[5rem] flex flex-col gap-5 justify-center items-center p-8 shadow-md"
+            >
+              <div
+                class="background-img"
+                style="
+                  background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');
+                "
+              ></div>
+              <div class="overlay"></div>
+              <div
+                class="card-content flex flex-col gap-5 justify-center items-center"
+              >
+                <span
+                  ><i class="fa-regular fa-eye text-[#ff7a2f] text-4xl"></i
+                ></span>
+                <h3 class="text-xl font-medium">Mobile Usability</h3>
+                <p>
+                  We are is placeholder texte nly used in the graphic prin and
+                  publishing.
+                </p>
+              </div>
             </div>
-             <span class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300">03</span>
-           </div>
+            <span
+              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              >03</span
+            >
+          </div>
 
-
-            <div class="relative">
-              <div class="card md:-mt-[10rem] flex flex-col gap-5 justify-center items-center p-8 shadow-md">
-                <div class="background-img" style="background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');"></div>
-                <div class="overlay"></div>
-                <div class="card-content flex flex-col gap-5 justify-center items-center">
-                    <span><i class="fa-solid fa-location-dot text-[#ff7a2f] text-5xl"></i></span>
-                    <h3 class="text-xl font-medium">Your competitors</h3>
-                    <p>We are is placeholder texte nly used in the graphic prin and publishing.</p>
-                </div>
-           
+          <div class="relative">
+            <div
+              class="card md:-mt-[10rem] flex flex-col gap-5 justify-center items-center p-8 shadow-md"
+            >
+              <div
+                class="background-img"
+                style="
+                  background-image: url('https://media.istockphoto.com/id/1354192776/photo/shot-of-two-technicians-working-together-in-a-server-room.jpg?s=612x612&w=0&k=20&c=IlztITZgLND0iJs4MCwg8R67ZsooJzZ85IMGunU_pKo=');
+                "
+              ></div>
+              <div class="overlay"></div>
+              <div
+                class="card-content flex flex-col gap-5 justify-center items-center"
+              >
+                <span
+                  ><i
+                    class="fa-solid fa-location-dot text-[#ff7a2f] text-5xl"
+                  ></i
+                ></span>
+                <h3 class="text-xl font-medium">Your competitors</h3>
+                <p>
+                  We are is placeholder texte nly used in the graphic prin and
+                  publishing.
+                </p>
+              </div>
             </div>
-                 <span class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300">04</span>
-            </div>
+            <span
+              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              >04</span
+            >
+          </div>
         </div>
+      </div>
 
+      <!--  main end -->
 
-       
+      <!-- about-section start -->
+      <div class="about-section relative" id="about">
+        <div class="relative">
+          <div class="polygon-shape"></div>
+
+          <div
+            class="about-content grid grid-cols md:grid-cols-2 items-center relative z-10 wrapper pt-[3rem] gap-5 md:gap-20 pb-20"
+          >
+            <div
+              class="about-content-left w-1/2 w-full mt-[12rem] md:mt-28 flex flex-col gap-3"
+            >
+              <div
+                class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-600 rounded-md text-lg items-center justify-center font-medium w-[27%]"
+              >
+                <span class="text-4xl">•</span>
+                <button>about us</button>
+              </div>
+
+              <h2
+                class="text-2xl md:text-[43px] font-semibold mt-4 w-[80%] uppercase leading-normal tracking-tighter agency"
+              >
+                Take Your Agency About For To The Business.
+              </h2>
+
+              <p class="mt-4 text-[#636363]">
+                We business a standard chunk of ipsum used since & Agency &
+                Startup Business reproduced we best it company business believe
+                for those interested best tokson duluxy retas...
+              </p>
+
+              <div class="agency flex items-center gap-10 mt-5">
+                <div class="agency-left flex gap-2">
+                  <span class="text-3xl text-[#ff7a2f]"
+                    ><i class="fa-solid fa-chart-column"></i
+                  ></span>
+                  <p class="text-xl text-black font-medium">
+                    Business of Agenci
+                  </p>
+                </div>
+                <div class="agency-right flex gap-3">
+                  <span class="text-3xl text-[#ff7a2f]"
+                    ><i class="fa-regular fa-hand-pointer"></i
+                  ></span>
+                  <p class="text-xl text-black font-medium">Support Solution</p>
+                </div>
+              </div>
+
+              <div class="valid-agency grid grid-cols md:grid-cols-2 mt-5">
+                <div class="w-[70%]">
+                  <img
+                    src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/serv.jpg"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div
+                  class="flex flex-col gap-2 justify-center md:-ml-14 mt-5 md:mt-0"
+                >
+                  <div class="flex gap-3 items-center">
+                    <span class="hover:text-[#ff7a2f] duration-300 text-lg"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <p class="text-[#636363]">We provide a revolutionary</p>
+                  </div>
+                  <div class="flex gap-3 items-center">
+                    <span class="hover:text-[#ff7a2f] duration-300 text-lg"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <p class="text-[#636363]">Donec facilisis velit agency</p>
+                  </div>
+                  <div class="flex gap-3 items-center">
+                    <span class="hover:text-[#ff7a2f] duration-300 text-lg"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <p class="text-[#636363]">Phasellus consequat</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-[#636363] mt-5">
+                  <span class="text-[#ff7a2f] text-md">AGENCY</span> : standard
+                  chunk of Ipsum used since is Agency & Startup Business
+                  reproduced we bet it company.
+                </p>
+              </div>
+            </div>
+            <div
+              class="about-img-right w-1/2 overflow-hidden relative z-20 w-full mt-20"
+            >
+              <img
+                src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/about-thumb.png"
+                alt=""
+                class="w-full h-full object-cover rounded-circle"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 md:mt-20">
+        <div
+          class="wrapper grid grid-cols md:grid-cols-2 gap-5 shadow-2xl service-agency p-5 bg-white"
+        >
+          <div class="img w-[500px] items-center p-10">
+            <img
+              src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/service.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content flex flex-col gap-5 md:-ml-24 justify-center">
+            <h2 class="text-xl font-medium">
+              We easily Integrate chat to your website Service agency business
+              company service.
+            </h2>
+            <p class="text-[#636363] text-[15px] md:text-[16px]">
+              We businesss standard chunk of Ipsum used since is Agency &
+              Startup Business reproduced we bet it company business below for
+              those interested bections dukuy retys..
+            </p>
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="flex flex-col gap-3">
+                <div class="flex gap-3 items-center">
+                  <span class="text-[#ff7a2f]"
+                    ><i class="fa-solid fa-circle-dot"></i
+                  ></span>
+                  <p class="text-[#636363] text-[14px] md:text-[16px]">
+                    We combine strategy with agency
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <span class="text-[#ff7a2f]"
+                    ><i class="fa-solid fa-circle-dot"></i
+                  ></span>
+                  <p class="text-[#636363] text-[14px] md:text-[16px]">
+                    Strategy trusted company
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex gap-3 items-center">
+                  <span class="text-[#ff7a2f]"
+                    ><i class="fa-solid fa-circle-dot"></i
+                  ></span>
+                  <p class="text-[#636363] text-[14px] md:text-[16px]">
+                    We combine strategy with agency
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <span class="text-[#ff7a2f]"
+                    ><i class="fa-solid fa-circle-dot"></i
+                  ></span>
+                  <p class="text-[#636363] text-[14px] md:text-[16px]">
+                    We combine for strategy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-section mt-28">
+        <div class="wrapper mt-20 flex gap-32 items-center">
+          <div class="hidden md:block animate-move h-[570px] -mt-28">
+            <img
+              src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/text-01.png"
+              alt="image"
+              class="h-full object-cover -mt-10"
+            />
+          </div>
+          <div class="ml-14">
+            <img
+              src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/agency.png"
+              alt="image"
+            />
+          </div>
+          <div class="hidden md:block ml-16 animate-move h-[500px]-mt-28">
+            <img
+              src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/text-2.png"
+              alt="image"
+              class="h-full object-cover -mt-24"
+            />
+          </div>
+        </div>
       </div>
     </main>
-     <!--  main end -->
 
+    <div class="contacts mt-28 relative pb-10 md:pb-0">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-85"></div>
 
-     <!-- about-section start -->
-   <div class="about-section mt-20 relative w-full h-96 bg-white">
-        <div class="overlay2 absolute top-0 left-0 w-full h-full">
-        <div class="content absolute  flex justify-between mt-20">
-            <p class="bg-opacity-70 p-4 text-black mt-[10rem]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto molestiae asperiores porro dignissimos recusandae eius repellendus perferendis laborum suscipit maxime.
-            </p>
-            <div class=" about-img-right w-96 h-96">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlK24IkmqlNqvH0LKQUzmsogX2OWhul7XCA&s" alt="" class="w-full h-full">
-            </div>
+      <div class="relative z-10 flex items-center justify-center h-full">
+        <div
+          class="text-white text-center grid grid-cols md:grid-cols-2 gap-20 justify-between wrapper"
+        >
+          <div class="flex items-center gap-2">
+            <img
+              src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/icn-1.png"
+              alt=""
+              class=""
+            />
+            <h3 class="text-md md:text-lg font-bold w-full">
+              Our Best It-Agency for Mission We Aim For You! Contacts.
+            </h3>
+          </div>
+
+          <div class="flex items-center ml-[24rem]">
+            <button
+              class="bg-[#ff7a2f] px-8 py-3 rounded-md hover:bg-black duration-300 text-[14px] md:text-[16px]"
+            >
+              Contact Us
+            </button>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
+
+    <div class="choose-project mt-20">
+      <div class="wrapper grid grid-cols md:grid-cols-2 gap-20">
+        <div class="left flex flex-col gap-5 mt-10">
+          <div
+            class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-600 rounded-md text-lg items-center justify-center font-medium w-[27%]"
+          >
+            <span class="text-4xl">•</span>
+            <button>Choose us</button>
+          </div>
+
+          <h2 class="text-2xl text-[39px] font-semibold leading-tight w-full">
+            LET’S TALK Choose PROJECT Now For Business
+          </h2>
+
+          <div class="flex flex-col gap-14 items-center mt-5">
+            <div
+              class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+            >
+              <div class="service-content flex flex-col gap-2">
+                <h4 class="text-xl font-medium">Find Solution Agency</h4>
+                <p>
+                  We businesss standard chunk of Ipsum used since is Agency &
+                  Star tup best reproduced we bet it company for.
+                </p>
+              </div>
+              <div class="service-tab">
+                <span class="text-5xl text-gray-800"
+                  ><i class="fa-solid fa-circle-arrow-up"></i
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+            >
+              <div class="service-content flex flex-col gap-2">
+                <h4 class="text-xl font-medium">Business to Agency</h4>
+                <p>
+                  We businesss standard chunk of Ipsum used since is Agency &
+                  Star tup best reproduced we bet it company for.
+                </p>
+              </div>
+              <div class="service-tab">
+                <span class="text-5xl text-gray-800"
+                  ><i class="fa-solid fa-circle-arrow-up"></i
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+            >
+              <div class="service-content flex flex-col gap-2">
+                <h4 class="text-xl font-medium">Digital Marketing Service</h4>
+                <p>
+                  We businesss standard chunk of Ipsum used since is Agency &
+                  Star tup best reproduced we bet it company for.
+                </p>
+              </div>
+              <div class="service-tab">
+                <span class="text-5xl text-gray-800"
+                  ><i class="fa-solid fa-circle-arrow-up"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right -mt-20">
+          <div class="w-[631px] h-full">
+            <img
+              src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/chooseimg.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="banner wrapper mt-20 mb-20">
+        <div class="banner-img flex justify-between">
+          <img
+            src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/brand-3.png"
+            alt=""
+            class="w-14 md:w-28 h-10 cursor-pointer"
+          />
+          <img
+            src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/brand-2.png"
+            alt=""
+            class="w-14 md:w-28 h-10 cursor-pointer"
+          />
+          <img
+            src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/brand-4.png"
+            alt=""
+            class="w-14 md:w-28 h-10 cursor-pointer"
+          />
+          <img
+            src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/brand-5.png"
+            alt=""
+            class="w-14 md:w-28 h-10 cursor-pointer"
+          />
+          <img
+            src="https://webteen.xyz/inter/potan/wp-content/uploads/2023/11/brand-1.png"
+            alt=""
+            class="w-14 md:w-28 h-10 cursor-pointer"
+          />
+        </div>
+      </div>
+    </div>
+
+    <section class="project-section relative">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-70"></div>
+
+      <div
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 mt-20 w-full"
+      >
+        <div class="wrapper flex flex-col items-center gap-4">
+          <div
+            class="about-btn text-[#ff7a2f] flex gap-2 bg-white rounded-md text-lg items-center justify-center font-medium font-semibold px-6"
+          >
+            <span class="text-4xl">•</span>
+            <button>Our Best Projects</button>
+          </div>
+          <h2 class="text-4xl text-white text-center font-semibold mt-4">
+            This are expert Projects the world 2022!.
+          </h2>
+
+          <div class="tab flex gap-4 mt-5">
+            <div class="tab-1 flex justify-center items-center">
+              <button
+                class="py-1 px-6 rounded-md text-white bg-[#ff7a2f] active"
+                data-tab="all"
+              >
+                Show All
+              </button>
+            </div>
+            <div class="tab-2 flex justify-center items-center">
+              <button
+                class="py-1 px-6 rounded-md text-black bg-white"
+                data-tab="tab-2"
+              >
+                Agency
+              </button>
+            </div>
+            <div class="tab-3 flex justify-center items-center">
+              <button
+                class="py-1 px-6 rounded-md text-black bg-white"
+                data-tab="tab-3"
+              >
+                Business
+              </button>
+            </div>
+            <div class="tab-4 flex justify-center items-center">
+              <button
+                class="py-1 px-6 rounded-md text-black bg-white"
+                data-tab="tab-4"
+              >
+                Creative
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            <div class="left flex flex-col gap-6">
+              <div
+                class="w-full h-[510px] overflow-hidden rounded-md relative group tab-2"
+              >
+                <img
+                  src="https://webteen.xyz/inter/potan/wp-content/uploads/2022/10/project-1.jpg"
+                  alt=""
+                  class="w-full h-full group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="bg-black opacity-0 group-hover:opacity-70 absolute inset-0 transition-opacity duration-500"
+                ></div>
+                <div
+                  class="bg-[#ff7a2f] p-5 absolute w-full bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-between"
+                >
+                  <div class="text-white">
+                    <h4 class="text-xl">Mobile Application</h4>
+                    <p>Create Theme</p>
+                  </div>
+                  <div
+                    class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                  >
+                    <span class="transform -rotate-45"
+                      ><i class="fa-solid fa-arrow-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="w-full overflow-hidden rounded-md relative group tab-2"
+              >
+                <img
+                  src="https://webteen.xyz/inter/potan/wp-content/uploads/2022/10/project-4.jpg"
+                  alt=""
+                  class="w-full h-full group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="bg-black opacity-0 group-hover:opacity-70 absolute inset-0 transition-opacity duration-500"
+                ></div>
+                <div
+                  class="bg-[#ff7a2f] p-5 absolute w-full bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-between"
+                >
+                  <div class="text-white">
+                    <h4 class="text-xl">Self-care for journalists</h4>
+                    <p>Create Theme</p>
+                  </div>
+                  <div
+                    class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                  >
+                    <span class="transform -rotate-45"
+                      ><i class="fa-solid fa-arrow-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right flex flex-col gap-6">
+              <div
+                class="w-full overflow-hidden rounded-md relative group tab-3"
+              >
+                <img
+                  src="https://webteen.xyz/inter/potan/wp-content/uploads/2022/10/project-2.jpg"
+                  alt=""
+                  class="w-full h-full group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="bg-black opacity-0 group-hover:opacity-70 absolute inset-0 transition-opacity duration-500"
+                ></div>
+                <div
+                  class="bg-[#ff7a2f] p-5 absolute w-full bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-between"
+                >
+                  <div class="text-white">
+                    <h4 class="text-xl">The 7 Stages of Alzheimer’s Disease</h4>
+                    <p>Create Theme</p>
+                  </div>
+                  <div
+                    class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                  >
+                    <span class="transform -rotate-45"
+                      ><i class="fa-solid fa-arrow-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-full overflow-hidden rounded-md relative group tab-4"
+              >
+                <img
+                  src="https://webteen.xyz/inter/potan/wp-content/uploads/2022/10/project-3.jpg"
+                  alt=""
+                  class="w-full h-full group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="bg-black opacity-0 group-hover:opacity-70 absolute inset-0 transition-opacity duration-500"
+                ></div>
+                <div
+                  class="bg-[#ff7a2f] p-5 absolute w-full bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-between"
+                >
+                  <div class="text-white">
+                    <h4 class="text-xl">The Culture Of Care</h4>
+                    <p>Create Theme</p>
+                  </div>
+                  <div
+                    class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                  >
+                    <span class="transform -rotate-45"
+                      ><i class="fa-solid fa-arrow-up"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
