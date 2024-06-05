@@ -61,6 +61,17 @@ header {
   color: var(--color-black);
   transition: var(--transition);
 }
+
+.hero-heading {
+  line-height: 100px !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fira Sans", sans-serif;
+}
 .project-menu {
   visibility: hidden;
   background-color: var(--color-primary);
@@ -223,4 +234,49 @@ header {
   background-color: #ff7a2f;
 }
 
+.app-store {
+  background-image: url("./images/service.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 5px;
+}
 
+.video-thm {
+  transform: rotate(-49deg);
+  border: 5px solid var(--color-secondary);
+  background-color: #203240;
+}
+
+.blog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ee65343a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all linear 0.5s;
+}
+.blog-img:hover .blog-overlay {
+  transform: scale(1);
+}
+
+footer {
+  background-image: url("./images/footer.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 5px;
+}
+
+.footer-botom-border {
+  width: 89vw;
+  height: 1px;
+  background-color: rgba(139, 132, 132, 0.514);
+}
