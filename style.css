@@ -280,3 +280,17 @@ footer {
   height: 1px;
   background-color: rgba(139, 132, 132, 0.514);
 }
+
+.scrolled {
+  background-color: white;
+  height: 90px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999; /* To ensure the navbar stays on top of other content */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.scrolled-text {
+  color: black !important;
+}

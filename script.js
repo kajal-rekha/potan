@@ -3,6 +3,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".tab button");
   const allTabs = document.querySelectorAll(".left > div, .right > div");
+  const navbar = document.querySelector("nav");
+  const navLinks = navbar.querySelectorAll("a");
+  const blockLogo = document.querySelector(".logo .block");
+  const hiddenLogo = document.querySelector(".logo .hidden");
 
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -10,14 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Filter tabs
       allTabs.forEach((div) => {
-        if (tab === "all") {
+        if (tab === "all" || div.classList.contains(tab)) {
           div.style.display = "block";
         } else {
-          if (div.classList.contains(tab)) {
-            div.style.display = "block";
-          } else {
-            div.style.display = "none";
-          }
+          div.style.display = "none";
         }
       });
 
@@ -34,5 +34,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial state
   document.querySelector('[data-tab="all"]').click();
-});
 
+  function updateStyles() {
+    if (window.scrollY > 0) {
+      navbar.classList.add("scrolled");
+      navLinks.forEach((link) => {
+        link.classList.add("scrolled-text");
+      });
+      blockLogo.style.display = "none";
+      hiddenLogo.style.display = "block";
+    } else {
+      navbar.classList.remove("scrolled");
+      navLinks.forEach((link) => {
+        link.classList.remove("scrolled-text");
+      });
+      blockLogo.style.display = "block";
+      hiddenLogo.style.display = "none";
+    }
+  }
+
+  // Listen for scroll events
+  window.addEventListener("scroll", updateStyles);
+});
