@@ -293,8 +293,7 @@ footer {
   color: black !important;
 }
 
-
-.mobile-nav{
+.mobile-nav {
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -358,5 +357,45 @@ footer {
   height: 50vh;
   position: relative;
 }
+
+/******** service page style start *********/
+.service-card {
+  border-radius: 2px 150px 2px 120px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.service-card:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  transition: 0.5s;
+}
+
+.service-arrow {
+  transform: rotate(-44deg);
+}
+
+.service-card:hover .text-black,
+.service-card:hover h3,
+.service-card:hover p,
+.service-card:hover .text-3xl,
+.service-card:hover .fa-arrow-up {
+  color: white;
+}
+
+.service-card:hover .service-arrow {
+  background-color: white;
+}
+
+.service-card:hover .service-arrow .fa-arrow-up {
+  color: #ff7a2f;
+}
+
+
+
+
+
+
+
+
+
 
 
