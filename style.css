@@ -389,13 +389,32 @@ footer {
   color: #ff7a2f;
 }
 
+.team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 68, 0, 0.212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all linear 0.5s;
+}
 
+.team-mem:hover .team-overlay {
+  transform: scale(1);
+}
 
-
-
-
-
-
-
-
-
+.swiper-pagination-bullet {
+  background: black !important;
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ff7a2f !important;
+  width: 12px !important;
+  height: 12px !important;
+}

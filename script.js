@@ -39,14 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileNav.classList.remove("hidden");
     navToggle.classList.add("hidden");
     navCross.classList.remove("hidden");
-    body.style.overflowY = "hidden"; 
+    body.style.overflowY = "hidden";
   });
 
   navCross.addEventListener("click", function () {
     mobileNav.classList.add("hidden");
     navToggle.classList.remove("hidden");
     navCross.classList.add("hidden");
-    body.style.overflowY = "auto"; 
+    body.style.overflowY = "auto";
   });
 
   // ========================= Tab functionality =========================//
@@ -77,3 +77,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector('[data-tab="all"]').click();
 });
+
+
