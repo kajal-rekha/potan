@@ -39,6 +39,21 @@ body {
   margin: 0 auto !important;
 }
 
+.with-border {
+  display: flex;
+  position: relative;
+}
+
+.with-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35%;
+  border-left: 2px solid #9b8d8d;
+  transform: translateX(-50%);
+}
+
 header {
   background-image: url("./images/headerimg1.jpg");
   background-position: center;
