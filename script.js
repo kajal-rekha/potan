@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
-  //================= Navbar functionality ======================//
+  // ===================== Navbar functionality ====================== //
   const navbar = document.querySelector("nav");
   const navLinks = navbar.querySelectorAll(".nav-links");
   const blockLogo = document.querySelector(".logo .block");
@@ -25,11 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // ======================= Listen for scroll and resize events =====================//
   window.addEventListener("scroll", updateStyles);
   window.addEventListener("resize", updateStyles);
 
-  // Mobile nav functionality
+  // ===================== Mobile nav functionality ===================== //
   const navToggle = document.querySelector(".nav-toggle");
   const navCross = document.querySelector(".nav-cross");
   const mobileNav = document.querySelector(".mobile-nav");
@@ -49,7 +48,23 @@ document.addEventListener("DOMContentLoaded", function () {
     body.style.overflowY = "auto";
   });
 
-  // ========================= Tab functionality =========================//
+  // ===================== Toggle sub-menu ===================== //
+  document.querySelectorAll(".mobile-home > a").forEach(function (menu) {
+    menu.addEventListener("click", function (e) {
+      e.preventDefault();
+      const subMenu = this.parentElement.querySelector(".mobile-sub-menu");
+      if (subMenu.style.display === "block") {
+        subMenu.style.display = "none";
+      } else {
+        document.querySelectorAll(".mobile-sub-menu").forEach(function (menu) {
+          menu.style.display = "none";
+        });
+        subMenu.style.display = "block";
+      }
+    });
+  });
+
+  // ===================== Tab functionality ===================== //
   const buttons = document.querySelectorAll(".tab button");
   const allTabs = document.querySelectorAll(".left > div, .right > div");
 
@@ -77,26 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector('[data-tab="all"]').click();
 
-
-  
-  function animateValue(id, start, end, duration) {
-    let obj = document.getElementById(id);
-    let range = end - start;
-    let current = start;
-    let increment = end > start ? 1 : -1;
-    let stepTime = Math.abs(Math.floor(duration / range));
-    let timer = setInterval(function () {
-      current += increment;
-      obj.textContent = current + "+";
-      if (current == end) {
-        clearInterval(timer);
-      }
-    }, stepTime);
-  }
-
-  animateValue("projectCount", 0, 12, 1000);
-  animateValue("memberCount", 0, 22, 1000);
-
+  // ===================== Animation for counters ===================== //
   function animateValue(id, start, end, duration) {
     let obj = document.getElementById(id);
     let range = end - start;
@@ -104,10 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let increment = range / (duration / 10);
     let timer = setInterval(function () {
       current += increment;
-      if (
-        (increment > 0 && current >= end) ||
-        (increment < 0 && current <= end)
-      ) {
+      if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
         clearInterval(timer);
         current = end;
       }
@@ -115,7 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 10);
   }
 
-  let totalDuration = 2000; 
+  let totalDuration = 2000;
+  animateValue("projectCount", 0, 12, totalDuration);
+  animateValue("memberCount", 0, 22, totalDuration);
   animateValue("happyClients", 0, 145, totalDuration);
   animateValue("projectsContact", 0, 258, totalDuration);
   animateValue("businessPlan", 0, 365, totalDuration);

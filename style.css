@@ -26,32 +26,20 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: var(--color-secondary);
   color: var(--color-black);
-  line-height: 1.8;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 .wrapper {
   width: 90% !important;
   margin: 0 auto !important;
-}
-
-.with-border {
-  display: flex;
-  position: relative;
-}
-
-.with-border::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 35%;
-  border-left: 2px solid #9b8d8d;
-  transform: translateX(-50%);
 }
 
 header {
@@ -85,6 +73,21 @@ header {
 h1,
 h2 {
   font-family: "Fira Sans", sans-serif;
+}
+
+.with-border {
+  display: flex;
+  position: relative;
+}
+
+.with-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35%;
+  border-left: 2px solid #9b8d8d;
+  transform: translateX(-50%);
 }
 .project-menu {
   visibility: hidden;
@@ -309,7 +312,7 @@ footer {
   color: black !important;
 }
 
-.mobile-nav {
+/* .mobile-nav {
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -320,16 +323,13 @@ footer {
 }
 .mobile-sub-menu {
   visibility: hidden;
-  background-color: var(--color-primary);
   width: 140px;
   border-radius: 10px;
   margin-top: -5px;
   margin-left: 100px;
   transition: var(--transition);
 }
-.company-project {
-  margin-left: 150px;
-}
+
 
 .mobile-home:hover .mobile-sub-menu {
   visibility: visible;
@@ -342,6 +342,10 @@ footer {
 
 .mobile-sub-menu li a {
   font-size: 15px;
+} */
+
+.company-project {
+  margin-left: 150px;
 }
 
 @media (max-width: 768px) {
@@ -433,4 +437,35 @@ footer {
   background: #ff7a2f !important;
   width: 12px !important;
   height: 12px !important;
+}
+
+.mobile-home {
+  position: relative;
+}
+
+.mobile-nav {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 555555;
+}
+.mobile-menu a {
+  font-size: 16px;
+}
+.mobile-sub-menu {
+  display: none; /* Initially hide the sub-menu */
+  width: 140px;
+  border-radius: 10px;
+  margin-top: 0; /* Reset margin-top */
+  background-color: var(--color-primary);
+  transition: var(--transition);
+  transform: translateX(100px); /* Translate instead of margin */
+}
+
+.mobile-sub-menu li:hover {
+  color: var(--color-black);
+  transition: var(--transition);
+}
+.mobile-sub-menu li a {
+  font-size: 15px;
 }
