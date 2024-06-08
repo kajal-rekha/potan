@@ -440,3 +440,36 @@ footer {
     margin-bottom: 100px;
   }
 }
+
+/* .top-scroll a {
+  font-size: 17px;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background: #ff7a2f;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  bottom: 80px;
+  right: 31px;
+  cursor: pointer;
+} */
+
+.top-scroll a {
+  font-size: 17px;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background: #ff7a2f;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  bottom: 80px;
+  right: 31px;
+  cursor: pointer;
+  z-index: 999999;
+}

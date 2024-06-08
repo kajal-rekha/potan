@@ -119,4 +119,28 @@ document.addEventListener("DOMContentLoaded", function () {
   animateValue("projectsContact", 0, 258, totalDuration);
   animateValue("businessPlan", 0, 365, totalDuration);
   animateValue("awardWinner", 0, 890, totalDuration);
+
+  // ===================== scrollToTop ===================== //
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function scrollToTop() {
+    const scrollDuration = 1000;
+    const scrollStep = -window.scrollY / (scrollDuration / 15);
+    const scrollInterval = setInterval(function () {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15);
+  }
+
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  mybutton.addEventListener("click", function (event) {
+    event.preventDefault();
+    scrollToTop();
+  });
 });
