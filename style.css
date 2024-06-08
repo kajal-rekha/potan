@@ -85,7 +85,7 @@ h2 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 35%;
+  left: 45%;
   border-left: 2px solid #9b8d8d;
   transform: translateX(-50%);
 }
@@ -283,21 +283,6 @@ h2 {
   transform: scale(1);
 }
 
-footer {
-  background-image: url("./images/footer.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  border-radius: 5px;
-}
-
-.footer-botom-border {
-  width: 89vw;
-  height: 1px;
-  background-color: #8b848483;
-}
-
 .scrolled {
   background-color: white;
   height: 90px;
@@ -347,10 +332,24 @@ footer {
 }
 
 .company-project {
-  transform: translateX(200px);
+  transform: translateX(100px);
   width: 180px;
 }
 
+footer {
+  background-image: url("./images/footer.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 5px;
+}
+
+.footer-botom-border {
+  width: 89vw;
+  height: 1px;
+  background-color: #8b848483;
+}
 /******** about page style start *********/
 
 .about-header {

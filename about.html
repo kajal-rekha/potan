@@ -21,307 +21,313 @@
       <!--================== navbar start==================== -->
 
       <div class="relative">
-           <nav class="nav h-[90px] z-100000">
-        <div class="wrapper h-full flex items-center justify-between w-full">
-          <div class="logo">
-            <a href="#" class="block">
-              <img src="./images/logo-01.png" alt="logo image" />
-            </a>
-            <a href="#" class="hidden">
-              <img src="./images/logo-02.png" alt="logo image" />
-            </a>
+        <nav class="nav h-[90px] z-100000">
+          <div class="wrapper h-full flex items-center justify-between w-full">
+            <div class="logo">
+              <a href="#" class="block">
+                <img src="./images/logo-01.png" alt="logo image" />
+              </a>
+              <a href="#" class="hidden">
+                <img src="./images/logo-02.png" alt="logo image" />
+              </a>
+            </div>
+
+            <div class="menu hidden md:block">
+              <ul class="text-white flex gap-8">
+                <li class="relative home">
+                  <a
+                    href="./index.html"
+                    class="text-white text-[17px] flex gap-2 hover:text-[#ff7a2f] duration-300 nav-links"
+                    >Home
+                    <span
+                      ><i
+                        class="fa-solid fa-chevron-down text-[12px]"
+                      ></i></span
+                  ></a>
+
+                  <ul
+                    class="absolute sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
+                  >
+                    <li>
+                      <a href="./index.html">Home </a>
+                    </li>
+                    <li>
+                      <a href="">Home 02</a>
+                    </li>
+                    <li>
+                      <a href="">Home 03</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    class="text-white text-[17px] hover:text-[#ff7a2f] duration-300 nav-links"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./service.html"
+                    class="text-white text-[17px] hover:text-[#ff7a2f] duration-300 nav-links"
+                    >Service</a
+                  >
+                </li>
+                <li class="relative home">
+                  <a
+                    href=""
+                    class="text-white text-[17px] flex gap-2 hover:text-[#ff7a2f] duration-300 nav-links"
+                    >Company<span
+                      ><i
+                        class="fa-solid fa-chevron-down text-[12px]"
+                      ></i></span
+                  ></a>
+
+                  <ul
+                    class="absolute sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
+                  >
+                    <li>
+                      <a href="">Pricing </a>
+                    </li>
+                    <li class="relative project-sub">
+                      <a href=""
+                        >Projects
+                        <span
+                          ><i
+                            class="fa-solid fa-angle-right text-[12px]"
+                          ></i></span
+                      ></a>
+                      <ul
+                        class="absolute project-menu flex flex-col gap-4 p-6 text-[16px] mt-5"
+                      >
+                        <li>
+                          <a href="./company/project01.html">Projects </a>
+                        </li>
+                        <li>
+                          <a href="./company/project02.html">Projects 02</a>
+                        </li>
+                        <li>
+                          <a href="./company/project03.html">Projects 03</a>
+                        </li>
+                        <li>
+                          <a href="./company/project04.html">Projects 04</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="./company/counter.html">Counter</a>
+                    </li>
+                    <li>
+                      <a href="./company/team.html">Team</a>
+                    </li>
+                    <li>
+                      <a href="./company/team-details.html">Team Details</a>
+                    </li>
+                    <li>
+                      <a href="./company/choose.html">Why Choose Us</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="relative home">
+                  <a
+                    href=""
+                    class="text-white text-[17px] flex gap-2 hover:text-[#ff7a2f] duration-300 nav-links"
+                    >Blog<span
+                      ><i
+                        class="fa-solid fa-chevron-down text-[12px]"
+                      ></i></span
+                  ></a>
+
+                  <ul
+                    class="absolute sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
+                  >
+                    <li>
+                      <a href="./blog/blog-details.html">Blog Details </a>
+                    </li>
+                    <li>
+                      <a href="./blog/error.html">Error</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-white text-[17px] hover:text-[#ff7a2f] duration-300 nav-links"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-btn hidden md:block -mr-[9rem]">
+              <button
+                type="button"
+                class="text-white text-[17px] bg-[#ff7a2f] hover:bg-[#f55b03] px-6 py-2.5 rounded-md font-medium duration-300"
+              >
+                Contact now
+              </button>
+            </div>
+
+            <div class="flex gap-3">
+              <button class="nav-toggle block md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-[#ff7a2f] text-4xl font-bold"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+                  />
+                </svg>
+              </button>
+              <div class="nav-cross hidden">
+                <i class="fa-solid fa-xmark text-2xl text-[#ff7a2f]"></i>
+              </div>
+            </div>
           </div>
+        </nav>
 
-          <div class="menu hidden md:block">
-            <ul class="text-white flex gap-8">
-              <li class="relative home">
-                <a
-                  href="./index.html"
-                  class="text-white text-[17px] flex gap-2 hover:text-[#ff7a2f] duration-300 nav-links"
-                  >Home
-                  <span
-                    ><i class="fa-solid fa-chevron-down text-[12px]"></i></span
-                ></a>
+        <!--================== MOBILE NAV ========================-->
+        <div
+          class="mobile-nav hidden md:hidden fixed top-20 left-0 bg-black w-full h-[700px] z-110000 overflow-hidden p-10"
+        >
+          <ul class="mobile-menu text-white flex flex-col gap-8">
+            <li class="relative mobile-home">
+              <a
+                href="./index.html"
+                class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
+                >Home
+                <span
+                  ><i
+                    class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
+                  ></i></span
+              ></a>
 
-                <ul
-                  class="absolute sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
-                >
-                  <li>
-                    <a href="./index.html">Home </a>
-                  </li>
-                  <li>
-                    <a href="">Home 02</a>
-                  </li>
-                  <li>
-                    <a href="">Home 03</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="./about.html"
-                  class="text-white text-[17px] hover:text-[#ff7a2f] duration-300 nav-links"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./service.html"
-                  class="text-white text-[17px] hover:text-[#ff7a2f] duration-300 nav-links"
-                  >Service</a
-                >
-              </li>
-              <li class="relative home">
-                <a
-                  href=""
-                  class="text-white text-[17px] flex gap-2 hover:text-[#ff7a2f] duration-300 nav-links"
-                  >Company<span
-                    ><i class="fa-solid fa-chevron-down text-[12px]"></i></span
-                ></a>
+              <ul
+                class="absolute mobile-sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
+              >
+                <li>
+                  <a href="./index.html">Home </a>
+                </li>
+                <li>
+                  <a href="">Home 02</a>
+                </li>
+                <li>
+                  <a href="">Home 03</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="text-white text-lg hover:text-[#ff7a2f] duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./service.html"
+                class="text-white text-lg hover:text-[#ff7a2f] duration-300"
+                >Service</a
+              >
+            </li>
+            <li class="relative mobile-home">
+              <a
+                href=""
+                class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
+                >Company<span
+                  ><i
+                    class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
+                  ></i></span
+              ></a>
 
-                <ul
-                  class="absolute sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
-                >
-                  <li>
-                    <a href="">Pricing </a>
-                  </li>
-                  <li class="relative project-sub">
-                    <a href=""
-                      >Projects
-                      <span
-                        ><i
-                          class="fa-solid fa-angle-right text-[12px]"
-                        ></i></span
-                    ></a>
-                    <ul
-                      class="absolute project-menu flex flex-col gap-4 p-6 text-[16px] mt-5"
-                    >
-                      <li>
-                        <a href="./company/project01.html">Projects </a>
-                      </li>
-                      <li>
-                        <a href="./company/project02.html">Projects 02</a>
-                      </li>
-                      <li>
-                        <a href="./company/project03.html">Projects 03</a>
-                      </li>
-                      <li>
-                        <a href="./company/project04.html">Projects 04</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="./company/counter.html">Counter</a>
-                  </li>
-                  <li>
-                    <a href="./company/team.html">Team</a>
-                  </li>
-                  <li>
-                    <a href="./company/team-details.html">Team Details</a>
-                  </li>
-                  <li>
-                    <a href="./company/choose.html">Why Choose Us</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="relative home">
-                <a
-                  href=""
-                  class="text-white text-[17px] flex gap-2 hover:text-[#ff7a2f] duration-300 nav-links"
-                  >Blog<span
-                    ><i class="fa-solid fa-chevron-down text-[12px]"></i></span
-                ></a>
+              <ul
+                class="absolute mobile-sub-menu company-project flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
+              >
+                <li>
+                  <a href="">Pricing </a>
+                </li>
+                <li class="relative project-sub relative mobile-home">
+                  <a href=""
+                    >Projects
+                    <span
+                      ><i class="fa-solid fa-angle-right text-[12px]"></i></span
+                  ></a>
+                  <ul
+                    class="absolute project-menu flex flex-col gap-4 p-6 text-[16px] mt-5"
+                  >
+                    <li>
+                      <a href="./company/project01.html">Projects </a>
+                    </li>
+                    <li>
+                      <a href="./company/project02.html">Projects 02</a>
+                    </li>
+                    <li>
+                      <a href="./company/project03.html">Projects 03</a>
+                    </li>
+                    <li>
+                      <a href="./company/project04.html">Projects 04</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./company/counter.html">Counter</a>
+                </li>
+                <li>
+                  <a href="./company/team.html">Team</a>
+                </li>
+                <li>
+                  <a href="./company/team-details.html">Team Details</a>
+                </li>
+                <li>
+                  <a href="./company/choose.html">Why Choose Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative mobile-home">
+              <a
+                href=""
+                class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
+                >Blog<span
+                  ><i
+                    class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
+                  ></i></span
+              ></a>
 
-                <ul
-                  class="absolute sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
-                >
-                  <li>
-                    <a href="./blog/blog-details.html">Blog Details </a>
-                  </li>
-                  <li>
-                    <a href="./blog/error.html">Error</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="text-white text-[17px] hover:text-[#ff7a2f] duration-300 nav-links"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+              <ul
+                class="absolute mobile-sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
+              >
+                <li>
+                  <a href="./blog/blog-details.html">Blog Details </a>
+                </li>
+                <li>
+                  <a href="./blog/error.html">Error</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white text-lg hover:text-[#ff7a2f] duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
 
-          <div class="contact-btn hidden md:block -mr-[9rem]">
+          <div class="contact-btn block mt-10">
             <button
               type="button"
-              class="text-white text-[17px] bg-[#ff7a2f] hover:bg-[#f55b03] px-6 py-2.5 rounded-md font-medium duration-300"
+              class="text-white text-md bg-[#ff7a2f] hover:bg-[#f55b03] px-7 py-2 rounded-md font-medium duration-300"
             >
               Contact now
             </button>
           </div>
-
-          <div class="flex gap-3">
-            <button class="nav-toggle block md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-[#ff7a2f] text-4xl font-bold"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
-                />
-              </svg>
-            </button>
-            <div class="nav-cross hidden">
-              <i class="fa-solid fa-xmark text-2xl text-[#ff7a2f]"></i>
-            </div>
-          </div>
         </div>
-      </nav>
-
-      <!--================== MOBILE NAV ========================-->
-      <div
-        class="mobile-nav hidden md:hidden fixed top-20 left-0 bg-black w-full h-[700px] z-110000 overflow-hidden p-10"
-      >
-        <ul class="mobile-menu text-white flex flex-col gap-8">
-          <li class="relative mobile-home">
-            <a
-              href="./index.html"
-              class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
-              >Home
-              <span
-                ><i
-                  class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
-                ></i></span
-            ></a>
-
-            <ul
-              class="absolute mobile-sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
-            >
-              <li>
-                <a href="./index.html">Home </a>
-              </li>
-              <li>
-                <a href="">Home 02</a>
-              </li>
-              <li>
-                <a href="">Home 03</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href="./about.html"
-              class="text-white text-lg hover:text-[#ff7a2f] duration-300"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="./service.html"
-              class="text-white text-lg hover:text-[#ff7a2f] duration-300"
-              >Service</a
-            >
-          </li>
-          <li class="relative mobile-home">
-            <a
-              href=""
-              class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
-              >Company<span
-                ><i
-                  class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
-                ></i></span
-            ></a>
-
-            <ul
-              class="absolute mobile-sub-menu company-project flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
-            >
-              <li>
-                <a href="">Pricing </a>
-              </li>
-              <li class="relative project-sub">
-                <a href=""
-                  >Projects
-                  <span
-                    ><i class="fa-solid fa-angle-right text-[12px]"></i></span
-                ></a>
-                <ul
-                  class="absolute project-menu flex flex-col gap-4 p-6 text-[16px] mt-5"
-                >
-                  <li>
-                    <a href="./company/project01.html">Projects </a>
-                  </li>
-                  <li>
-                    <a href="./company/project02.html">Projects 02</a>
-                  </li>
-                  <li>
-                    <a href="./company/project03.html">Projects 03</a>
-                  </li>
-                  <li>
-                    <a href="./company/project04.html">Projects 04</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="./company/counter.html">Counter</a>
-              </li>
-              <li>
-                <a href="./company/team.html">Team</a>
-              </li>
-              <li>
-                <a href="./company/team-details.html">Team Details</a>
-              </li>
-              <li>
-                <a href="./company/choose.html">Why Choose Us</a>
-              </li>
-            </ul>
-          </li>
-          <li class="relative mobile-home">
-            <a
-              href=""
-              class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
-              >Blog<span
-                ><i
-                  class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
-                ></i></span
-            ></a>
-
-            <ul
-              class="absolute mobile-sub-menu flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
-            >
-              <li>
-                <a href="./blog/blog-details.html">Blog Details </a>
-              </li>
-              <li>
-                <a href="./blog/error.html">Error</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href=""
-              class="text-white text-lg hover:text-[#ff7a2f] duration-300"
-              >Contact</a
-            >
-          </li>
-        </ul>
-
-        <div class="contact-btn block mt-10">
-          <button
-            type="button"
-            class="text-white text-md bg-[#ff7a2f] hover:bg-[#f55b03] px-7 py-2 rounded-md font-medium duration-300"
-          >
-            Contact now
-          </button>
-        </div>
-      </div>
 
         <div
           class="flex flex-col gap-2 pt-[9rem] md:pt-0 md:mt-12 items-center justify-center"
@@ -346,7 +352,7 @@
         <div class="wrapper cards grid grid-cols md:grid-cols-4 gap-10">
           <div class="relative">
             <div
-              class="flex flex-col gap-5 card shadow-md md:mt-28 justify-center items-center p-8 z-5"
+              class="flex flex-col gap-5 card shadow-md md:mt-28 justify-center items-center p-8"
             >
               <div
                 class="background-img"
@@ -359,17 +365,19 @@
                 class="card-content flex flex-col gap-5 justify-center items-center"
               >
                 <span
-                  ><i class="fa-regular fa-comments text-[#ff7a2f] text-3xl"></i
+                  ><i
+                    class="fa-regular fa-comments text-[#ff7a2f] text-xl md:text-3xl"
+                  ></i
                 ></span>
                 <h3 class="text-xl font-medium">Your competitors</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >01</span
             >
           </div>
@@ -390,18 +398,18 @@
               >
                 <span
                   ><i
-                    class="fa-brands fa-servicestack text-[#ff7a2f] text-4xl"
+                    class="fa-brands fa-servicestack text-[#ff7a2f] text-xl md:text-3xl"
                   ></i
                 ></span>
                 <h3 class="text-xl font-medium">Full Responsive</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >02</span
             >
           </div>
@@ -421,17 +429,19 @@
                 class="card-content flex flex-col gap-5 justify-center items-center"
               >
                 <span
-                  ><i class="fa-regular fa-eye text-[#ff7a2f] text-4xl"></i
+                  ><i
+                    class="fa-regular fa-eye text-[#ff7a2f] text-xl md:text-3xl"
+                  ></i
                 ></span>
                 <h3 class="text-xl font-medium">Mobile Usability</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >03</span
             >
           </div>
@@ -452,18 +462,18 @@
               >
                 <span
                   ><i
-                    class="fa-solid fa-location-dot text-[#ff7a2f] text-5xl"
+                    class="fa-solid fa-location-dot text-[#ff7a2f] text-2xl md:text-4xl"
                   ></i
                 ></span>
                 <h3 class="text-xl font-medium">Your competitors</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >04</span
             >
           </div>
@@ -477,44 +487,48 @@
           <div class="polygon-shape"></div>
 
           <div
-            class="about-content grid grid-cols-1 md:grid-cols-2 items-center relative z-10 wrapper md:pt-4 gap-5 md:gap-20 pb-20"
+            class="about-content grid grid-cols-1 md:grid-cols-2 items-center relative z-10 wrapper md:pt-4 gap-5 md:gap-20 pb-20 pt-10"
           >
             <div
               class="about-content-left w-full mt-20 md:mt-28 flex flex-col gap-3"
             >
               <div
-                class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-600 rounded-md text-lg items-center justify-center font-medium w-1/3"
+                class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-600 rounded-md md:text-lg items-center justify-center font-medium w-1/2 md:w-1/4"
               >
                 <span class="text-4xl">•</span>
-                <button>about us</button>
+                <button class="bg-none border-none">about us</button>
               </div>
 
               <h2
-                class="text-2xl md:text-[43px] font-semibold mt-4 w-full uppercase leading-normal tracking-tighter"
+                class="text-xl md:text-[43px] font-semibold mt-4 w-full uppercase leading-normal tracking-tighter"
               >
                 Take Your Agency About For To The Business.
               </h2>
 
-              <p class="mt-4 text-[#636363]">
+              <p class="mt-4 text-[#636363] text-[14px] md:text-[16px]">
                 We business a standard chunk of ipsum used since & Agency &
                 Startup Business reproduced we best it company business believe
                 for those interested best tokson duluxy retas...
               </p>
 
-              <div class="agency flex items-center gap-10 mt-5">
-                <div class="agency-left flex gap-2">
-                  <span class="text-3xl text-[#ff7a2f]"
+              <div
+                class="agency flex flex-col md:flex-row gap-5 md:gap-10 mt-5"
+              >
+                <div class="agency-left flex gap-3 items-center">
+                  <span class="text-xl md:text-3xl text-[#ff7a2f]"
                     ><i class="fa-solid fa-chart-column"></i
                   ></span>
-                  <p class="text-xl text-black font-medium">
+                  <p class="text-md md:text-xl text-black font-medium">
                     Business of Agenci
                   </p>
                 </div>
-                <div class="agency-right flex gap-3">
-                  <span class="text-3xl text-[#ff7a2f]"
+                <div class="agency-right flex gap-3 items-center">
+                  <span class="text-xl md:text-3xl text-[#ff7a2f]"
                     ><i class="fa-regular fa-hand-pointer"></i
                   ></span>
-                  <p class="text-xl text-black font-medium">Support Solution</p>
+                  <p class="text-md md:text-xl text-black font-medium">
+                    Support Solution
+                  </p>
                 </div>
               </div>
 
@@ -536,33 +550,41 @@
                     <span class="hover:text-[#ff7a2f] duration-300 text-lg"
                       ><i class="fa-solid fa-circle-check"></i
                     ></span>
-                    <p class="text-[#636363]">We provide a revolutionary</p>
+                    <p class="text-[#636363] text-[14px] md:text-[16px]">
+                      We provide a revolutionary
+                    </p>
                   </div>
                   <div class="flex gap-3 items-center">
                     <span class="hover:text-[#ff7a2f] duration-300 text-lg"
                       ><i class="fa-solid fa-circle-check"></i
                     ></span>
-                    <p class="text-[#636363]">Donec facilisis velit agency</p>
+                    <p class="text-[#636363] text-[14px] md:text-[16px]">
+                      Donec facilisis velit agency
+                    </p>
                   </div>
                   <div class="flex gap-3 items-center">
                     <span class="hover:text-[#ff7a2f] duration-300 text-lg"
                       ><i class="fa-solid fa-circle-check"></i
                     ></span>
-                    <p class="text-[#636363]">Phasellus consequat</p>
+                    <p class="text-[#636363] text-[14px] md:text-[16px]">
+                      Phasellus consequat
+                    </p>
                   </div>
                 </div>
               </div>
               <div>
-                <p class="text-[#636363] mt-5">
-                  <span class="text-[#ff7a2f] text-md">AGENCY</span> : standard
-                  chunk of Ipsum used since is Agency & Startup Business
-                  reproduced we bet it company.
+                <p class="text-[#636363] mt-5 text-[14px] md:text-[16px]">
+                  <span class="text-[#ff7a2f] text-[14px] md:text-md"
+                    >AGENCY</span
+                  >
+                  : standard chunk of Ipsum used since is Agency & Startup
+                  Business reproduced we bet it company.
                 </p>
               </div>
             </div>
 
             <div
-              class="about-img-right w-full overflow-hidden relative z-20 mt-20"
+              class="about-img-right w-full overflow-hidden relative z-20 md:mt-20"
             >
               <img
                 src="./images/about-thumb.png"
@@ -574,12 +596,12 @@
         </div>
       </section>
 
-      <div class="service-agency-section py-20">
+      <div class="service-agency-section py-0 md:py-20">
         <div
-          class="wrapper grid grid-cols-1 md:grid-cols-2 gap-5 shadow-2xl p-5 bg-white"
+          class="wrapper grid grid-cols-1 md:grid-cols-2 gap-5 shadow-2xl md:p-5 bg-white"
         >
           <div
-            class="img w-full md:w-[500px] p-10 flex items-center justify-center"
+            class="img w-full md:w-[500px] p-5 md:p-10 flex items-center justify-center"
           >
             <img
               src="./images/service.jpg"
@@ -587,12 +609,14 @@
               class="w-full"
             />
           </div>
-          <div class="content flex flex-col gap-5 justify-center md:-ml-24">
-            <h2 class="text-xl font-medium">
+          <div
+            class="content flex flex-col gap-5 justify-center md:-ml-24 p-5 md:p-0"
+          >
+            <h2 class="text-md md:text-xl font-medium">
               We easily Integrate chat to your website Service agency business
               company service.
             </h2>
-            <p class="text-[#636363] text-[15px] md:text-[16px]">
+            <p class="text-[#636363] text-[14px] md:text-[16px]">
               We businesss standard chunk of Ipsum used since is Agency &
               Startup Business reproduced we bet it company business below for
               those interested bections dukuy retys..
@@ -640,6 +664,7 @@
       </div>
 
       <!--==================about section end ==================== -->
+
       <!--==================chart section start ==================== -->
 
       <section class="chart-section mt-28">

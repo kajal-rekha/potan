@@ -227,7 +227,7 @@
                 />
               </svg>
             </button>
-            <div class="nav-cross hidden">
+            <div class="nav-cross hidden md:hidden">
               <i class="fa-solid fa-xmark text-2xl text-[#ff7a2f]"></i>
             </div>
           </div>
@@ -281,7 +281,7 @@
               Company
               <span class="toggle-sub-menu"
                 ><i
-                  class="fa-solid fa-chevron-down text-[12px] p-3 rounded-md"
+                  class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
                 ></i
               ></span>
             </a>
@@ -289,7 +289,7 @@
               class="absolute mobile-sub-menu company-project flex flex-col gap-4 p-6 text-[16px] mt-5 -ml-5"
             >
               <li><a href="">Pricing </a></li>
-              <li class="relative project-sub">
+              <li class="relative project-sub relative mobile-home">
                 <a href="">
                   Projects
                   <span
@@ -299,7 +299,7 @@
                 <ul
                   class="absolute project-menu flex flex-col gap-4 p-6 text-[16px] mt-5"
                 >
-                  <li><a href="./company/project01.html">Projects </a></li>
+                  <li><a href="./company/project01.html">Projects 01</a></li>
                   <li><a href="./company/project02.html">Projects 02</a></li>
                   <li><a href="./company/project03.html">Projects 03</a></li>
                   <li><a href="./company/project04.html">Projects 04</a></li>
@@ -314,12 +314,12 @@
           <li class="relative mobile-home">
             <a
               href=""
-             class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
+              class="text-white flex justify-between hover:text-[#ff7a2f] duration-300"
             >
               Blog
               <span class="toggle-sub-menu"
                 ><i
-                   class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
+                  class="fa-solid fa-chevron-down text-[12px] border border-[#ff7a2f] p-3 rounded-md"
                 ></i
               ></span>
             </a>
@@ -338,6 +338,7 @@
             >
           </li>
         </ul>
+
         <div class="contact-btn block mt-10">
           <button
             type="button"
@@ -379,13 +380,15 @@
               <div class="project-com flex flex-col gap-3">
                 <span
                   id="projectCount"
-                  class="text-5xl text-white font-semibold"
+                  class="text-3xl md:text-5xl text-white font-semibold"
                   >12+</span
                 >
                 <p>Project Completed</p>
               </div>
               <div class="member flex flex-col gap-3">
-                <span id="memberCount" class="text-5xl text-white font-semibold"
+                <span
+                  id="memberCount"
+                  class="text-3xl md:text-5xl text-white font-semibold"
                   >22+</span
                 >
                 <p>Team Members</p>
@@ -439,17 +442,19 @@
                 class="card-content flex flex-col gap-5 justify-center items-center"
               >
                 <span
-                  ><i class="fa-regular fa-comments text-[#ff7a2f] text-3xl"></i
+                  ><i
+                    class="fa-regular fa-comments text-[#ff7a2f] text-xl md:text-3xl"
+                  ></i
                 ></span>
                 <h3 class="text-xl font-medium">Your competitors</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >01</span
             >
           </div>
@@ -470,18 +475,18 @@
               >
                 <span
                   ><i
-                    class="fa-brands fa-servicestack text-[#ff7a2f] text-4xl"
+                    class="fa-brands fa-servicestack text-[#ff7a2f] text-xl md:text-3xl"
                   ></i
                 ></span>
                 <h3 class="text-xl font-medium">Full Responsive</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >02</span
             >
           </div>
@@ -501,17 +506,19 @@
                 class="card-content flex flex-col gap-5 justify-center items-center"
               >
                 <span
-                  ><i class="fa-regular fa-eye text-[#ff7a2f] text-4xl"></i
+                  ><i
+                    class="fa-regular fa-eye text-[#ff7a2f] text-xl md:text-3xl"
+                  ></i
                 ></span>
                 <h3 class="text-xl font-medium">Mobile Usability</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >03</span
             >
           </div>
@@ -532,18 +539,18 @@
               >
                 <span
                   ><i
-                    class="fa-solid fa-location-dot text-[#ff7a2f] text-5xl"
+                    class="fa-solid fa-location-dot text-[#ff7a2f] text-2xl md:text-4xl"
                   ></i
                 ></span>
                 <h3 class="text-xl font-medium">Your competitors</h3>
-                <p>
+                <p class="text-[14px] md:text-[17px]">
                   We are is placeholder texte nly used in the graphic prin and
                   publishing.
                 </p>
               </div>
             </div>
             <span
-              class="text-gray-600 text-5xl -mt-4 ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
+              class="text-gray-600 text-3xl md:text-5xl -mt-4 ml-36 md:ml-24 absolute font-medium hover:text-[#ff7a2f] duration-300"
               >04</span
             >
           </div>
@@ -563,38 +570,42 @@
               class="about-content-left w-full mt-20 md:mt-28 flex flex-col gap-3"
             >
               <div
-                class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-600 rounded-md md:text-lg items-center justify-center font-medium w-1/4"
+                class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-600 rounded-md md:text-lg items-center justify-center font-medium w-1/2 md:w-1/4"
               >
                 <span class="text-4xl">•</span>
                 <button class="bg-none border-none">about us</button>
               </div>
 
               <h2
-                class="text-2xl md:text-[43px] font-semibold mt-4 w-full uppercase leading-normal tracking-tighter"
+                class="text-xl md:text-[43px] font-semibold mt-4 w-full uppercase leading-normal tracking-tighter"
               >
                 Take Your Agency About For To The Business.
               </h2>
 
-              <p class="mt-4 text-[#636363]">
+              <p class="mt-4 text-[#636363] text-[14px] md:text-[16px]">
                 We business a standard chunk of ipsum used since & Agency &
                 Startup Business reproduced we best it company business believe
                 for those interested best tokson duluxy retas...
               </p>
 
-              <div class="agency flex items-center gap-10 mt-5">
-                <div class="agency-left flex gap-2">
-                  <span class="text-3xl text-[#ff7a2f]"
+              <div
+                class="agency flex flex-col md:flex-row gap-5 md:gap-10 mt-5"
+              >
+                <div class="agency-left flex gap-3 items-center">
+                  <span class="text-xl md:text-3xl text-[#ff7a2f]"
                     ><i class="fa-solid fa-chart-column"></i
                   ></span>
-                  <p class="text-xl text-black font-medium">
+                  <p class="text-md md:text-xl text-black font-medium">
                     Business of Agenci
                   </p>
                 </div>
-                <div class="agency-right flex gap-3">
-                  <span class="text-3xl text-[#ff7a2f]"
+                <div class="agency-right flex gap-3 items-center">
+                  <span class="text-xl md:text-3xl text-[#ff7a2f]"
                     ><i class="fa-regular fa-hand-pointer"></i
                   ></span>
-                  <p class="text-xl text-black font-medium">Support Solution</p>
+                  <p class="text-md md:text-xl text-black font-medium">
+                    Support Solution
+                  </p>
                 </div>
               </div>
 
@@ -616,33 +627,41 @@
                     <span class="hover:text-[#ff7a2f] duration-300 text-lg"
                       ><i class="fa-solid fa-circle-check"></i
                     ></span>
-                    <p class="text-[#636363]">We provide a revolutionary</p>
+                    <p class="text-[#636363] text-[14px] md:text-[16px]">
+                      We provide a revolutionary
+                    </p>
                   </div>
                   <div class="flex gap-3 items-center">
                     <span class="hover:text-[#ff7a2f] duration-300 text-lg"
                       ><i class="fa-solid fa-circle-check"></i
                     ></span>
-                    <p class="text-[#636363]">Donec facilisis velit agency</p>
+                    <p class="text-[#636363] text-[14px] md:text-[16px]">
+                      Donec facilisis velit agency
+                    </p>
                   </div>
                   <div class="flex gap-3 items-center">
                     <span class="hover:text-[#ff7a2f] duration-300 text-lg"
                       ><i class="fa-solid fa-circle-check"></i
                     ></span>
-                    <p class="text-[#636363]">Phasellus consequat</p>
+                    <p class="text-[#636363] text-[14px] md:text-[16px]">
+                      Phasellus consequat
+                    </p>
                   </div>
                 </div>
               </div>
               <div>
-                <p class="text-[#636363] mt-5">
-                  <span class="text-[#ff7a2f] text-md">AGENCY</span> : standard
-                  chunk of Ipsum used since is Agency & Startup Business
-                  reproduced we bet it company.
+                <p class="text-[#636363] mt-5 text-[14px] md:text-[16px]">
+                  <span class="text-[#ff7a2f] text-[14px] md:text-md"
+                    >AGENCY</span
+                  >
+                  : standard chunk of Ipsum used since is Agency & Startup
+                  Business reproduced we bet it company.
                 </p>
               </div>
             </div>
 
             <div
-              class="about-img-right w-full overflow-hidden relative z-20 mt-20"
+              class="about-img-right w-full overflow-hidden relative z-20 md:mt-20"
             >
               <img
                 src="./images/about-thumb.png"
@@ -654,12 +673,12 @@
         </div>
       </section>
 
-      <div class="service-agency-section py-20">
+      <div class="service-agency-section py-0 md:py-20">
         <div
-          class="wrapper grid grid-cols-1 md:grid-cols-2 gap-5 shadow-2xl p-5 bg-white"
+          class="wrapper grid grid-cols-1 md:grid-cols-2 gap-5 shadow-2xl md:p-5 bg-white"
         >
           <div
-            class="img w-full md:w-[500px] p-10 flex items-center justify-center"
+            class="img w-full md:w-[500px] p-5 md:p-10 flex items-center justify-center"
           >
             <img
               src="./images/service.jpg"
@@ -667,12 +686,14 @@
               class="w-full"
             />
           </div>
-          <div class="content flex flex-col gap-5 justify-center md:-ml-24">
-            <h2 class="text-xl font-medium">
+          <div
+            class="content flex flex-col gap-5 justify-center md:-ml-24 p-5 md:p-0"
+          >
+            <h2 class="text-md md:text-xl font-medium">
               We easily Integrate chat to your website Service agency business
               company service.
             </h2>
-            <p class="text-[#636363] text-[15px] md:text-[16px]">
+            <p class="text-[#636363] text-[14px] md:text-[16px]">
               We businesss standard chunk of Ipsum used since is Agency &
               Startup Business reproduced we bet it company business below for
               those interested bections dukuy retys..
@@ -732,7 +753,7 @@
               class="h-full object-cover -mt-10"
             />
           </div>
-          <div class="ml-14">
+          <div class="md:ml-14">
             <img src="./images/agency.png" alt="agency image" />
           </div>
           <div class="hidden md:block ml-16 animate-move h-[500px]-mt-28">
@@ -781,71 +802,77 @@
       <!--==================contact section end ==================== -->
 
       <!--==================choose section start ==================== -->
-      <section class="choose-project mt-20 mb-20">
+      <section class="choose-project mt-10 md:mt-20 mb-20">
         <div
           class="wrapper grid grid-cols-1 md:grid-cols-2 gap-20 mb-[10rem] items-center"
         >
           <div class="left flex flex-col gap-5 mt-10">
             <div
-              class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-300 rounded-md text-lg items-center md:font-medium w-[22%] md:w-[27%]"
+              class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-300 rounded-md md:text-lg items-center md:font-medium w-1/2 md:1/4 p-2"
             >
               <span class="md:text-4xl">•</span>
               <button class="choose-btn bg-none border-none">Choose us</button>
             </div>
 
             <h2
-              class="text-2xl md:text-[39px] font-semibold leading-tight w-full"
+              class="text-xl md:text-[39px] font-semibold leading-tight w-full"
             >
               LET’S TALK Choose PROJECT Now For Business
             </h2>
 
-            <div class="flex flex-col gap-14 items-center mt-5">
+            <div class="flex flex-col gap-14 items-center md:mt-5">
               <div
-                class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+                class="flex justify-between items-center p-5 md:p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
               >
                 <div class="service-content flex flex-col gap-2">
-                  <h4 class="text-xl font-medium">Find Solution Agency</h4>
-                  <p>
+                  <h4 class="text-lg md:text-xl font-medium">
+                    Find Solution Agency
+                  </h4>
+                  <p class="text-[14px] md:text-[16px]">
                     We businesss standard chunk of Ipsum used since is Agency &
                     Star tup best reproduced we bet it company for.
                   </p>
                 </div>
                 <div class="service-tab">
-                  <span class="text-5xl text-gray-800"
+                  <span class="text-5xl text-gray-800 hidden md:block"
                     ><i class="fa-solid fa-circle-arrow-up"></i
                   ></span>
                 </div>
               </div>
 
               <div
-                class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+                class="flex justify-between items-center p-5 md:p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
               >
                 <div class="service-content flex flex-col gap-2">
-                  <h4 class="text-xl font-medium">Business to Agency</h4>
-                  <p>
+                  <h4 class="text-lg md:text-xl font-medium">
+                    Business to Agency
+                  </h4>
+                  <p class="text-[14px] md:text-[16px]">
                     We businesss standard chunk of Ipsum used since is Agency &
                     Star tup best reproduced we bet it company for.
                   </p>
                 </div>
                 <div class="service-tab">
-                  <span class="text-5xl text-gray-800"
+                  <span class="text-5xl text-gray-800 hidden md:block"
                     ><i class="fa-solid fa-circle-arrow-up"></i
                   ></span>
                 </div>
               </div>
 
               <div
-                class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+                class="flex justify-between items-center p-5 md:p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
               >
                 <div class="service-content flex flex-col gap-2">
-                  <h4 class="text-xl font-medium">Digital Marketing Service</h4>
-                  <p>
+                  <h4 class="text-lg md:text-xl font-medium">
+                    Digital Marketing Service
+                  </h4>
+                  <p class="text-[14px] md:text-[16px]">
                     We businesss standard chunk of Ipsum used since is Agency &
                     Star tup best reproduced we bet it company for.
                   </p>
                 </div>
                 <div class="service-tab">
-                  <span class="text-5xl text-gray-800"
+                  <span class="text-5xl text-gray-800 hidden md:block"
                     ><i class="fa-solid fa-circle-arrow-up"></i
                   ></span>
                 </div>
@@ -869,27 +896,27 @@
           <img
             src="./images/brand-1.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="./images/brand-2.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="./images/brand-3.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="./images/brand-4.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="./images/brand-5.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
         </div>
       </div>
@@ -897,7 +924,7 @@
       <!--==================choose section end ==================== -->
 
       <!--==================project section start ==================== -->
-      <section class="project-section relative h-[225vh] md:h-[222vh] mt-20">
+      <section class="project-section relative h-[160vh] md:h-[222vh] mt-20">
         <!-- Overlay -->
         <div class="absolute inset-0 bg-gray-900 opacity-70"></div>
 
@@ -917,38 +944,45 @@
               This are expert Projects the world 2022!.
             </h2>
 
-            <div class="tab flex gap-2 md:gap-4 mt-5">
-              <div class="tab-1 flex justify-center items-center">
-                <button
-                  class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f] active"
-                  data-tab="all"
-                >
-                  Show All
-                </button>
+            <div
+              class="tab flex flex-col md:flex-row gap-2 md:gap-4 mt-5 items-center"
+            >
+              <div class="flex flex-row gap-3 items-center">
+                <div class="tab-1 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f] active"
+                    data-tab="all"
+                  >
+                    Show All
+                  </button>
+                </div>
+                <div class="tab-2 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
+                    data-tab="tab-2"
+                  >
+                    Agency
+                  </button>
+                </div>
               </div>
-              <div class="tab-2 flex justify-center items-center">
-                <button
-                  class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
-                  data-tab="tab-2"
-                >
-                  Agency
-                </button>
-              </div>
-              <div class="tab-3 flex justify-center items-center">
-                <button
-                  class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
-                  data-tab="tab-3"
-                >
-                  Business
-                </button>
-              </div>
-              <div class="tab-4 flex justify-center items-center">
-                <button
-                  class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
-                  data-tab="tab-4"
-                >
-                  Creative
-                </button>
+
+              <div class="flex flex-row gap-3 mt-3 md:mt-0 items-center">
+                <div class="tab-3 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
+                    data-tab="tab-3"
+                  >
+                    Business
+                  </button>
+                </div>
+                <div class="tab-4 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
+                    data-tab="tab-4"
+                  >
+                    Creative
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -1171,9 +1205,11 @@
                   ></iframe>
                 </div>
 
-                <div class="map-form bg-white flex flex-col gap-5 items-center">
+                <div
+                  class="map-form bg-white flex flex-col gap-5 items-center mt-5 md:mt-0"
+                >
                   <div class="form-border"></div>
-                  <h4 class="text-3xl md:text-4xl font-bold">
+                  <h4 class="text-2xl md:text-4xl font-bold">
                     Request A Quote
                   </h4>
                   <p class="text-[#636363]">24/7 support</p>
@@ -1237,51 +1273,51 @@
       <!--==================app section start ==================== -->
       <section class="app-section mt-[128rem] md:mt-[60rem] mb-20">
         <div class="wrapper">
-          <div class="app-store relative w-full h-[105vh] md:h-[70vh]">
+          <div class="app-store relative w-full h-[90vh] md:h-[70vh]">
             <!-- Overlay -->
             <div class="absolute inset-0 bg-gray-900 opacity-70"></div>
 
             <div
-              class="absolute md:p-9 grid grid-cols md:grid-cols-2 gap-10 p-14"
+              class="absolute md:p-9 grid grid-cols md:grid-cols-2 gap-10 md:p-14"
             >
               <div class="flex flex-col gap-5 p-2 mt-8">
                 <div
-                  class="about-btn text-[#ff7a2f] flex gap-2 bg-white rounded-md text-[12px] md:text-lg items-center justify-center font-medium font-semibold px-3 md:px-4 hover:bg-black duration-300 w-1/2"
+                  class="about-btn text-[#ff7a2f] flex gap-2 bg-white rounded-md text-[12px] md:text-lg items-center justify-center font-medium font-semibold px-3 md:px-4 hover:bg-black duration-300 w-[70%]"
                 >
                   <span class="text-4xl">•</span>
                   <button class="bg-none border-none">OUR WATCH VIDEO</button>
                 </div>
 
                 <h3
-                  class="text-2xl md:text-4xl font-medium text-white leading-tight"
+                  class="text-xl md:text-4xl font-medium text-white leading-tight"
                 >
                   OUR BUSINESS AGENCY APPS STORE.
                 </h3>
 
-                <div class="flex flex-col gap-8">
-                  <div class="flex gap-8">
+                <div class="flex flex-col gap-5 md:gap-8 mt-5">
+                  <div class="flex gap-4 md:gap-8">
                     <div
-                      class="border py-2 px-5 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300"
+                      class="border md:py-2 md:px-5 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300 items-center px-1 py-1"
                     >
                       <span><i class="fa-brands fa-apple text-md"></i></span>
-                      <button class="font-medium">App store</button>
+                      <button class="md:font-medium">App store</button>
                     </div>
                     <div
-                      class="border py-2 px-5 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300"
+                      class="border md:py-2 md:px-5 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300 items-center px-1 py-1"
                     >
                       <span><i class="fa-solid fa-cloud text-[12px]"></i></span>
                       <button class="font-medium">Play store</button>
                     </div>
                   </div>
-                  <div class="flex gap-8">
+                  <div class="flex gap-4 md:gap-8">
                     <div
-                      class="border py-2 px-3 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300"
+                      class="border md:py-2 md:px-5 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300 items-center px-1 py-1"
                     >
                       <span><i class="fa-brands fa-google-plus-g"></i></span>
                       <button class="font-medium">Google App</button>
                     </div>
                     <div
-                      class="border py-2 px-4 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300"
+                      class="border md:py-2 md:px-5 text-white flex gap-2 rounded-md hover:bg-[#ff7a2f] duration-300 items-center px-1 py-1"
                     >
                       <span
                         ><i class="fa-solid fa-table-columns text-[13px]"></i
@@ -1293,7 +1329,7 @@
               </div>
               <div>
                 <div
-                  class="img md:w-[90%] md:h-[380px] w-full md:ml-14 relative mt-12 md:mt-0"
+                  class="img md:w-[90%] md:h-[380px] w-full md:ml-14 relative mt-28 md:mt-0"
                 >
                   <img
                     src="./images/video-thumb.jpg"
@@ -1301,7 +1337,7 @@
                     class="h-full w-full object-cover"
                   />
                   <div
-                    class="w-20 h-20 md:w-32 md:h-32 overflow-hidden -mt-[30rem] md:-mt-[15rem] ml-40 md:-ml-14 absolute p-3 md:p-5 rounded-sm video-thm"
+                    class="w-20 h-20 md:w-32 md:h-32 overflow-hidden -mt-[23rem] md:-mt-[15rem] ml-40 md:-ml-14 absolute p-3 md:p-5 rounded-sm video-thm"
                   >
                     <img
                       src="https://assets-v2.lottiefiles.com/a/c97d4dec-1173-11ee-a8df-a350615f466b/HzlJZ2iVMb.gif"
@@ -1324,12 +1360,12 @@
           <div
             class="about-btn text-[#ff7a2f] flex flex-row gap-1 bg-white rounded-md md:text-lg items-center justify-center font-medium font-semibold"
           >
-            <span class="text-5xl">•</span>
+            <span class="text-4xl md:text-5xl">•</span>
             <button class="bg-none border-none">Our Largest Blog</button>
           </div>
 
           <h3
-            class="text-2xl md:text-[44px] uppercase font-medium text-center mt-5"
+            class="text-xl md:text-[44px] uppercase font-medium text-center mt-5"
           >
             Blog & News For Agency
           </h3>
@@ -1348,11 +1384,11 @@
               </div>
               <div class="blog-content p-6 flex flex-col gap-3">
                 <div
-                  class="bg-[#ff7a2f] text-white h-12 rounded-md flex items-center justify-center -mt-10 z-20"
+                  class="bg-[#ff7a2f] text-white h-12 rounded-md flex items-center justify-center -mt-10 z-20 p-1"
                 >
                   <p>Treatment November 8,2023 - By: Admin</p>
                 </div>
-                <h4 class="text-xl font-medium mt-2">
+                <h4 class="text-lg md:text-xl font-medium mt-2">
                   Best Digital Agency News
                 </h4>
                 <p class="text-[13px] text-[#636363]">
@@ -1386,11 +1422,11 @@
               </div>
               <div class="blog-content p-6 flex flex-col gap-3">
                 <div
-                  class="bg-[#ff7a2f] text-white h-12 rounded-md flex items-center justify-center -mt-10 z-20"
+                  class="bg-[#ff7a2f] text-white h-12 rounded-md flex items-center justify-center -mt-10 z-20 p-1"
                 >
                   <p>Physician November 8,2023 - By: Admin</p>
                 </div>
-                <h4 class="text-xl font-medium mt-2">
+                <h4 class="text-lg md:text-xl font-medium mt-2">
                   Business to Agency Blog
                 </h4>
                 <p class="text-[13px] text-[#636363]">
@@ -1424,11 +1460,13 @@
               </div>
               <div class="blog-content p-6 flex flex-col gap-3">
                 <div
-                  class="bg-[#ff7a2f] text-white h-12 rounded-md flex items-center justify-center -mt-10 z-20"
+                  class="bg-[#ff7a2f] text-white h-12 rounded-md flex items-center justify-center -mt-10 z-20 p-1"
                 >
                   <p>Care November 8,2023 - By: Admin</p>
                 </div>
-                <h4 class="text-xl font-medium">Praesentium Dolores Blog</h4>
+                <h4 class="text-lg md:text-xl font-medium">
+                  Praesentium Dolores Blog
+                </h4>
                 <p class="text-[13px] text-[#636363]">
                   We businesss standard chunk of Ipsum used since is Agency
                   [...]

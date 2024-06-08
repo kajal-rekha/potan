@@ -21,7 +21,7 @@
       <!--================== navbar start==================== -->
 
       <div class="relative">
-      <nav class="nav h-[90px] z-100000">
+        <nav class="nav h-[90px] z-100000">
           <div class="wrapper h-full flex items-center justify-between w-full">
             <div class="logo">
               <a href="#" class="block">
@@ -252,7 +252,7 @@
                 <li>
                   <a href="">Pricing </a>
                 </li>
-                <li class="relative project-sub">
+                <li class="relative project-sub relative mobile-home">
                   <a href=""
                     >Projects
                     <span
@@ -348,67 +348,77 @@
 
     <main>
       <!--==================choose section start ==================== -->
-      <section class="choose-project mt-20 mb-20">
-        <div class="wrapper grid grid-cols-1 md:grid-cols-2 gap-20 mb-[10rem]">
+      <section class="choose-project mt-10 md:mt-20 mb-20">
+        <div
+          class="wrapper grid grid-cols-1 md:grid-cols-2 gap-20 mb-[10rem] items-center"
+        >
           <div class="left flex flex-col gap-5 mt-10">
             <div
-              class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-600 rounded-md text-lg flex items-center justify-center font-medium w-[27%]"
+              class="about-btn text-[#ff7a2f] flex gap-2 border border-gray-300 rounded-md md:text-lg items-center md:font-medium w-1/2 md:1/4 p-2"
             >
-              <span class="text-4xl">•</span>
-              <button>Choose us</button>
+              <span class="md:text-4xl">•</span>
+              <button class="choose-btn bg-none border-none">Choose us</button>
             </div>
 
-            <h2 class="text-2xl text-[39px] font-semibold leading-tight w-full">
+            <h2
+              class="text-xl md:text-[39px] font-semibold leading-tight w-full"
+            >
               LET’S TALK Choose PROJECT Now For Business
             </h2>
 
-            <div class="flex flex-col gap-14 items-center mt-5">
+            <div class="flex flex-col gap-14 items-center md:mt-5">
               <div
-                class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+                class="flex justify-between items-center p-5 md:p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
               >
                 <div class="service-content flex flex-col gap-2">
-                  <h4 class="text-xl font-medium">Find Solution Agency</h4>
-                  <p>
+                  <h4 class="text-lg md:text-xl font-medium">
+                    Find Solution Agency
+                  </h4>
+                  <p class="text-[14px] md:text-[16px]">
                     We businesss standard chunk of Ipsum used since is Agency &
                     Star tup best reproduced we bet it company for.
                   </p>
                 </div>
                 <div class="service-tab">
-                  <span class="text-5xl text-gray-800"
+                  <span class="text-5xl text-gray-800 hidden md:block"
                     ><i class="fa-solid fa-circle-arrow-up"></i
                   ></span>
                 </div>
               </div>
 
               <div
-                class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+                class="flex justify-between items-center p-5 md:p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
               >
                 <div class="service-content flex flex-col gap-2">
-                  <h4 class="text-xl font-medium">Business to Agency</h4>
-                  <p>
+                  <h4 class="text-lg md:text-xl font-medium">
+                    Business to Agency
+                  </h4>
+                  <p class="text-[14px] md:text-[16px]">
                     We businesss standard chunk of Ipsum used since is Agency &
                     Star tup best reproduced we bet it company for.
                   </p>
                 </div>
                 <div class="service-tab">
-                  <span class="text-5xl text-gray-800"
+                  <span class="text-5xl text-gray-800 hidden md:block"
                     ><i class="fa-solid fa-circle-arrow-up"></i
                   ></span>
                 </div>
               </div>
 
               <div
-                class="flex justify-between items-center p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
+                class="flex justify-between items-center p-5 md:p-8 shadow-md gap-3 rounded-md hover:bg-[#ff7a2f] hover:text-white duration-300"
               >
                 <div class="service-content flex flex-col gap-2">
-                  <h4 class="text-xl font-medium">Digital Marketing Service</h4>
-                  <p>
+                  <h4 class="text-lg md:text-xl font-medium">
+                    Digital Marketing Service
+                  </h4>
+                  <p class="text-[14px] md:text-[16px]">
                     We businesss standard chunk of Ipsum used since is Agency &
                     Star tup best reproduced we bet it company for.
                   </p>
                 </div>
                 <div class="service-tab">
-                  <span class="text-5xl text-gray-800"
+                  <span class="text-5xl text-gray-800 hidden md:block"
                     ><i class="fa-solid fa-circle-arrow-up"></i
                   ></span>
                 </div>
@@ -417,11 +427,11 @@
           </div>
 
           <div class="right">
-            <div class="w-[631px] h-full">
+            <div class="w-full h-full">
               <img
                 src="../images/chooseimg.jpg"
                 alt="chooseimg image"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover rounded-md"
               />
             </div>
           </div>
@@ -432,27 +442,27 @@
           <img
             src="../images/brand-1.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="../images/brand-2.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="../images/brand-3.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="../images/brand-4.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
           <img
             src="../images/brand-5.png"
             alt=""
-            class="w-14 md:w-28 h-10 cursor-pointer"
+            class="w-12 md:w-28 h-8 cursor-pointer"
           />
         </div>
       </div>
@@ -460,7 +470,7 @@
       <!--==================choose section end ==================== -->
 
       <!--==================project section start ==================== -->
-      <section class="project-section relative h-[310vh] md:h-[222vh] mt-20">
+      <section class="project-section relative h-[160vh] md:h-[222vh] mt-20">
         <!-- Overlay -->
         <div class="absolute inset-0 bg-gray-900 opacity-70"></div>
 
@@ -469,54 +479,63 @@
         >
           <div class="wrapper flex flex-col items-center gap-4">
             <div
-              class="about-btn text-[#ff7a2f] flex gap-2 bg-white rounded-md text-lg items-center justify-center font-medium font-semibold px-6"
+              class="about-btn text-[#ff7a2f] flex gap-2 bg-white rounded-md text-[12px] md:text-lg items-center justify-center font-medium font-semibold px-3 md:px-4 hover:bg-black duration-300"
             >
               <span class="text-4xl">•</span>
-              <button>Our Best Projects</button>
+              <button class="bg-none border-none">Our Best Projects</button>
             </div>
-            <h2 class="text-4xl text-white text-center font-semibold mt-4">
+            <h2
+              class="text-2xl md:text-4xl text-white text-center font-semibold mt-4"
+            >
               This are expert Projects the world 2022!.
             </h2>
 
-            <div class="tab flex gap-4 mt-5">
-              <div class="tab-1 flex justify-center items-center">
-                <button
-                  class="py-1 px-6 rounded-md text-white bg-[#ff7a2f] active"
-                  data-tab="all"
-                >
-                  Show All
-                </button>
+            <div
+              class="tab flex flex-col md:flex-row gap-2 md:gap-4 mt-5 items-center"
+            >
+              <div class="flex flex-row gap-3 items-center">
+                <div class="tab-1 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f] active"
+                    data-tab="all"
+                  >
+                    Show All
+                  </button>
+                </div>
+                <div class="tab-2 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
+                    data-tab="tab-2"
+                  >
+                    Agency
+                  </button>
+                </div>
               </div>
-              <div class="tab-2 flex justify-center items-center">
-                <button
-                  class="py-1 px-6 rounded-md text-black bg-white"
-                  data-tab="tab-2"
-                >
-                  Agency
-                </button>
-              </div>
-              <div class="tab-3 flex justify-center items-center">
-                <button
-                  class="py-1 px-6 rounded-md text-black bg-white"
-                  data-tab="tab-3"
-                >
-                  Business
-                </button>
-              </div>
-              <div class="tab-4 flex justify-center items-center">
-                <button
-                  class="py-1 px-6 rounded-md text-black bg-white"
-                  data-tab="tab-4"
-                >
-                  Creative
-                </button>
+
+              <div class="flex flex-row gap-3 mt-3 md:mt-0 items-center">
+                <div class="tab-3 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
+                    data-tab="tab-3"
+                  >
+                    Business
+                  </button>
+                </div>
+                <div class="tab-4 flex justify-center items-center">
+                  <button
+                    class="py-1 px-4 md:px-6 rounded-md text-[13px] md:text-[16px] text-white bg-[#ff7a2f]"
+                    data-tab="tab-4"
+                  >
+                    Creative
+                  </button>
+                </div>
               </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
               <div class="left flex flex-col gap-6">
                 <div
-                  class="w-full h-[510px] overflow-hidden rounded-md relative group tab-2 projects"
+                  class="w-full md:h-[510px] overflow-hidden rounded-md relative group tab-2 projects"
                 >
                   <img
                     src="../images/project-1.jpg"
@@ -533,7 +552,7 @@
                       <p>Create Theme</p>
                     </div>
                     <div
-                      class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                      class="bg-white w-14 h-12 md:w-20 md:h-16 rounded-md flex items-center justify-center"
                     >
                       <span class="transform -rotate-45"
                         ><i class="fa-solid fa-arrow-up"></i
@@ -559,7 +578,7 @@
                       <p>Create Theme</p>
                     </div>
                     <div
-                      class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                      class="bg-white w-14 h-12 md:w-20 md:h-16 rounded-md flex items-center justify-center"
                     >
                       <span class="transform -rotate-45"
                         ><i class="fa-solid fa-arrow-up"></i
@@ -590,7 +609,7 @@
                       <p>Create Theme</p>
                     </div>
                     <div
-                      class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                      class="bg-white w-14 h-12 md:w-20 md:h-16 rounded-md flex items-center justify-center"
                     >
                       <span class="transform -rotate-45"
                         ><i class="fa-solid fa-arrow-up"></i
@@ -616,7 +635,7 @@
                       <p>Create Theme</p>
                     </div>
                     <div
-                      class="bg-white w-20 h-16 rounded-md flex items-center justify-center"
+                      class="bg-white w-14 h-12 md:w-20 md:h-16 rounded-md flex items-center justify-center"
                     >
                       <span class="transform -rotate-45"
                         ><i class="fa-solid fa-arrow-up"></i
@@ -636,7 +655,9 @@
 
       <!--================== contact section start ==================== -->
 
-      <div class="w-full md:w-[75vw] absolute md:left-1/2 md:transform md:-translate-x-1/2 mb-20 -mt-24 bg-white pt-5">
+      <div
+        class="w-full md:w-[75vw] absolute md:left-1/2 md:transform md:-translate-x-1/2 mb-20 -mt-24 bg-white pt-5"
+      >
         <div class="wrapper grid grid-cols-1 md:grid-cols-4 mt-5 gap-8">
           <div
             class="p-5 text-[#181717] hover:bg-[#ff7a2f] hover:text-white rounded-md duration-300 flex gap-4 items-center"
@@ -810,8 +831,6 @@
         </div>
       </section>
 
-
-      
       <div class="mt-[98rem] md:mt-[59rem]">
         <div
           class="absolute w-full md:w-[75vw] md:left-1/2 md:transform md:-translate-x-1/2 p-2"
@@ -873,7 +892,9 @@
 
     <!--==================footer added ==================== -->
 
-    <footer class="relative h-[170vh] md:h-[418px] mt-28 mt-[122rem] md:mt-[70rem] ">
+    <footer
+      class="relative h-[170vh] md:h-[418px] mt-28 mt-[122rem] md:mt-[70rem]"
+    >
       <!-- Overlay -->
       <div class="absolute inset-0 bg-gray-900 opacity-90"></div>
 
