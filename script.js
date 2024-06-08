@@ -53,13 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.addEventListener("click", function (e) {
       e.preventDefault();
       const subMenu = this.parentElement.querySelector(".mobile-sub-menu");
-      if (subMenu.style.display === "block") {
-        subMenu.style.display = "none";
+      if (subMenu.style.visibility === "visible") {
+        subMenu.style.visibility = "hidden";
       } else {
+        // Hide any other open sub-menus
         document.querySelectorAll(".mobile-sub-menu").forEach(function (menu) {
-          menu.style.display = "none";
+          menu.style.visibility = "hidden";
         });
-        subMenu.style.display = "block";
+        subMenu.style.visibility = "visible";
       }
     });
   });
@@ -100,7 +101,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let increment = range / (duration / 10);
     let timer = setInterval(function () {
       current += increment;
-      if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+      if (
+        (increment > 0 && current >= end) ||
+        (increment < 0 && current <= end)
+      ) {
         clearInterval(timer);
         current = end;
       }
