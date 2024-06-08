@@ -312,7 +312,11 @@ footer {
   color: black !important;
 }
 
-/* .mobile-nav {
+.mobile-home {
+  position: relative;
+}
+
+.mobile-nav {
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -322,48 +326,25 @@ footer {
   font-size: 16px;
 }
 .mobile-sub-menu {
-  visibility: hidden;
+  display: none;
   width: 140px;
   border-radius: 10px;
-  margin-top: -5px;
-  margin-left: 100px;
+  margin-top: 0;
+  background-color: var(--color-primary);
   transition: var(--transition);
-}
-
-
-.mobile-home:hover .mobile-sub-menu {
-  visibility: visible;
+  transform: translateX(100px);
 }
 
 .mobile-sub-menu li:hover {
   color: var(--color-black);
   transition: var(--transition);
 }
-
 .mobile-sub-menu li a {
   font-size: 15px;
-} */
+}
 
 .company-project {
   margin-left: 150px;
-}
-
-@media (max-width: 768px) {
-  .hero-heading {
-    line-height: 50px !important;
-  }
-
-  .polygon-shape {
-    background: #eaeaee;
-    clip-path: polygon(88% 3%, 100% 3%, 100% 50%, 100% 100%, 0 100%, 0 5%);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: 1;
-    margin-bottom: 100px;
-  }
 }
 
 /******** about page style start *********/
@@ -439,33 +420,20 @@ footer {
   height: 12px !important;
 }
 
-.mobile-home {
-  position: relative;
-}
+@media (max-width: 768px) {
+  .hero-heading {
+    line-height: 50px !important;
+  }
 
-.mobile-nav {
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
-  z-index: 555555;
-}
-.mobile-menu a {
-  font-size: 16px;
-}
-.mobile-sub-menu {
-  display: none; /* Initially hide the sub-menu */
-  width: 140px;
-  border-radius: 10px;
-  margin-top: 0; /* Reset margin-top */
-  background-color: var(--color-primary);
-  transition: var(--transition);
-  transform: translateX(100px); /* Translate instead of margin */
-}
-
-.mobile-sub-menu li:hover {
-  color: var(--color-black);
-  transition: var(--transition);
-}
-.mobile-sub-menu li a {
-  font-size: 15px;
+  .polygon-shape {
+    background: #eaeaee;
+    clip-path: polygon(88% 3%, 100% 3%, 100% 50%, 100% 100%, 0 100%, 0 5%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    margin-bottom: 100px;
+  }
 }
